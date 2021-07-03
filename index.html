@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- name="viewport" means hey im providing some information about viewport
+		and then we say adjust the width to device width, not the device pixels  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/grids.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+</head>
+
+<body>
+    <!-- in text link -->
+
+    <!-- 4 levels of heading -->
+
+    <section class="grid two-column">
+        <h1>Treasurous</h1>
+
+        <nav class="grid four-column add-gutters">
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Shop</a>
+
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
+
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
+
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
+        </nav>
+    </section>
+
+
+
+    <!-- https://www.w3schools.com/howto/howto_css_searchbar.asp -->
+
+    <form class="grid two-column-fixed">
+        <input type="text" placeholder="Search.." name="search" />
+        <div class="button" href="#" id="search-button">
+            <svg class="search-icon" viewBox="0 0 24 24">
+          <path
+            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+        </div>
+    </form>
+
+
+
+    <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <img class="carousel__img" src="img/anna-elizabeth.jpg" class="product-details-img" alt="a gold necklace" />
+                <div class="carousel__snapper">
+                    <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <img class="carousel__img" src="img/rachel-sweeney.jpg" class="product-details-img" alt="a gold necklace" />
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+            </li>
+        </ol>
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                    <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+            </ol>
+        </aside>
+    </section>
+
+
+
+    <script src="slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+
+/* https://fonts.google.com/specimen/Work+Sans?category=Sans+Serif&thickness=2 */
+
+
+/* https://coolors.co/ccd5ae-e9edc9-fefae0-fdf8ec-d4a373 */
+
+
+/* https://css-tricks.com/snippets/css/using-font-face/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+/* https://stackoverflow.com/questions/28140628/how-to-remove-borders-of-the-header-tag */
+
+h1 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bodoni Moda', serif;
+    font-style: Semi-bold;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-style: regular;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-style: regular;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+hr {
+    margin-top: 2rem;
+    border-top: 0.1rem solid #645C41;
+    border-bottom: none;
+}
+
+body {
+    margin: 1.5rem;
+    background-color: #FDF8EC;
+    color: #645C41;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 70rem;
+}
+
+
+/* https://dev.to/braydoncoyer/change-text-highlight-color-with-css-80 */
+
+::selection {
+    background: #B2773D;
+    color: #FDF8EC;
+}
+
+
+/* https://css-tricks.com/almanac/selectors/p/placeholder/ */
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    margin: 1.5rem;
+    color: #645C41;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 70rem;
+}
+
+
+/* https://learn.shayhowe.com/html-css/building-forms/ */
+
+fieldset {
+    border: 1px solid #645C41;
+    padding: 1rem;
+}
+
+.box {
+    border: 1px solid #645C41;
+    padding: 1rem;
+}
+
+.title {
+    font-family: 'Bodoni Moda', serif;
+    font-style: regular;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+
+  https://stackoverflow.com/questions/30558184/
+  make-a-button-fill-the-full-width-of-container-element
+*/
+
+img:hover {
+    opacity: 0.7;
+}
+
+a {
+    display: block;
+    color: #645C41;
+    font-family: 'Bodoni Moda', serif;
+    font-style: regular;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+/* https://www.w3schools.com/css/css_link.asp 
+https://stackoverflow.com/questions/21498400/
+why-does-text-decoration-underline-not-work/21502392*/
+
+a:hover,
+a:focus {
+    color: #9E6A36;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    /* border-bottom: 1px solid #9E6A36;
+  padding-bottom: 3px; */
+}
+
+
+/* https://stackoverflow.com/questions/21444096/
+how-to-center-text-inside-anchor-tag */
+
+.button {
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #FEFBF4;
+    font-family: 'Bodoni Moda', serif;
+    background-color: #9E6A36;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    max-width: inherit;
+}
+
+.button:hover,
+.button:focus {
+    color: #FEFBF4;
+    text-decoration: none;
+    background-color: #B2773D;
+}
+
+#search-button {
+    width: fit-content;
+    cursor: pointer;
+}
+
+#search-button svg {
+    width: 25px;
+    height: 25px;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+/* https://www.w3schools.com/howto/
+tryit.asp?filename=tryhow_css_custom_radio */
+
+
+/* The container */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* https://stackoverflow.com/questions/22252472/
+how-to-change-the-color-of-an-svg-element */
+
+.search-icon {
+    fill: #FDF8EC;
+}
+
+img .product-details-img {
+    width: 100%;
+    height: auto;
+}
+
+img .products {
+    max-width: 30%;
+    max-height: auto;
+    display: inline-block;
+}
+
+
+/* https://www.geeksforgeeks.org/svg-viewbox-attribute/ 
+https://stackoverflow.com/questions/60491855/how-to-resize-the-clippath-area-of-svg
+https://css-tricks.com/using-svg/
+https://lessons.livecode.com/m/33498/l/325452-getting-svg-path-data-for-svg-icon-extension
+*/
+
+.clipped-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    object-fit: inherit;
+}
+
+.order-summary {
+    position: fixed;
+    top: 2.5rem;
+    right: 1rem;
+    left: 60%;
+    z-index: 1;
+}
+
+.left-align {
+    text-align: -webkit-right;
+}

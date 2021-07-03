@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- name="viewport" means hey im providing some information about viewport
+		and then we say adjust the width to device width, not the device pixels  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/grids.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+</head>
+
+<body>
+    <!-- in text link -->
+
+    <!-- 4 levels of heading -->
+
+    <section class="grid two-column">
+        <h1>Treasurous</h1>
+
+        <nav class="grid four-column add-gutters">
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Shop</a>
+
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
+
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
+
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
+        </nav>
+    </section>
+    <h2>Chain Gold Necklace</h2>
+    <section class="grid two-column-product add-gutters product-details">
+        <div class="img-container grid add-gutters">
+            <a href="https://stackoverflow.com/questions/14730484/add-a-link-to-an-image-in-a-css-style-sheet">
+                <img src="img/anna-elizabeth.jpg" class="clipped-img product-details-img" alt="a gold necklace" width="100" height="120" />
+            </a>
+            <div class="grid fields-3-column-fixed add-gutters">
+                <img class="products" src="img/luisana-galicia.jpg" alt="a gold necklace" width="125" height="110" />
+                <img class="products" src="img/luisana-galicia.jpg" alt="a gold necklace" width="125" height="110" />
+                <img class="products" src="img/luisana-galicia.jpg" alt="a gold necklace" width="125" height="110" />
+            </div>
+        </div>
+
+        <div>
+            <!-- https://100ways.com/collections/
+        featured-new-available/products/floral-diamond-ring-0-02ct-sz-9-5 -->
+            <section class="grid two-column-fixed">
+                <section>
+                    <p>Metal</p>
+                    <p>Size</p>
+                    <p>Carat</p>
+                </section>
+
+                <section>
+                    <p class="left-align">9 1/2</p>
+                    <p class="left-align">10k Yellow Gold</p>
+                    <p class="left-align">0.02ct</p>
+                </section>
+            </section>
+
+            <!-- https://www.w3schools.com/tags/att_input_type_number.asp 
+        https://stackoverflow.com/questions/63544101/customize-increment-arrows
+        -on-input-of-type-number-using-css-->
+            <section>
+                <form class="grid two-column add-gutters">
+                    <label for="quantity">Quantity:</label>
+                    <td>
+                        <div class="input-group mx-auto mb-0 left-align">
+                            <div class="number-input">
+                                <button></button>
+                                <input class="quantity bg-light" min="0" name="quantity" value="1" type="number" />
+                                <button class="plus"></button>
+                            </div>
+                        </div>
+                    </td>
+                </form>
+            </section>
+
+            <section>
+                <a class="button" href="checkout.html">Add To Cart</a>
+            </section>
+        </div>
+    </section>
+
+    <hr>
+
+    <h3>You May Also Like</h3>
+    <section class="grid three-rows-fixed add-gutters">
+        <img class="products" src="img/jess-harper.jpg" alt="a gold necklace" width="200" height="250" />
+        <label class="title" for="necklace">Vintage Gold Necklace</label>
+        <label for="necklace"> CA$‌32.00</label>
+    </section>
+</body>
+
+</html>

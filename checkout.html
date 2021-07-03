@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- name="viewport" means hey im providing some information about viewport
+		and then we say adjust the width to device width, not the device pixels  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/grids.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+</head>
+
+<body>
+
+    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio -->
+
+
+    <div class="grid two-column-checkout add-gutters">
+        <section class="grid add-gutters">
+
+
+            <!-- https://codepen.io/stephan281094/pen/XQRpQm -->
+            <div class="form-container box">
+                <h3>Shipping</h3>
+                <p>Please enter your shipping details.</p>
+
+                <div class="form">
+
+                    <div class="fields fields-2-column-fixed ">
+                        <label class="field">
+                  <span class="field__label" for="firstname">First name</span>
+                  <input class="field__input" type="text" id="firstname"  />
+                </label>
+                        <label class="field">
+                  <span class="field__label" for="lastname">Last name</span>
+                  <input class="field__input" type="text" id="lastname"/>
+                </label>
+                    </div>
+                    <label class="field">
+                <span class="field__label" for="address">Address</span>
+                <input class="field__input" type="text" id="address" />
+              </label>
+                    <label class="field">
+                <span class="field__label" for="country">Country</span>
+                <select class="field__input" id="country">
+                  <option value=""></option>
+                  <option value="unitedstates">United States</option>
+                </select>
+              </label>
+                    <div class="fields fields-3-column-fixed">
+                        <label class="field">
+                  <span class="field__label" for="zipcode">Zip code</span>
+                  <input class="field__input" type="text" id="zipcode" />
+                </label>
+                        <label class="field">
+                  <span class="field__label" for="city">City</span>
+                  <input class="field__input" type="text" id="city" />
+                </label>
+                        <label class="field">
+                  <span class="field__label" for="state">State</span>
+                  <select class="field__input" id="state">
+                    <option value=""></option>
+                  </select>
+                </label>
+                    </div>
+                </div>
+                <a class="button" href="#">Continue</a>
+
+            </div>
+
+
+
+
+            <div class="form-container box">
+                <h3>Payment</h3>
+                <label class="container">Debit or Credit Card
+          <input type="radio" checked="checked" name="radio">
+          <div class="fields fields-3-column-fixed">
+            <label class="field">
+          <span class="field__label" for="month">Month</span>
+          <select class="field__input" id="month">
+            <option value=""></option>
+          </select>
+        </label>
+                <label class="field">
+          <span class="field__label" for="year">Year</span>
+          <select class="field__input" id="year">
+            <option value=""></option>
+          </select>
+        </label>
+                <label class="field">
+          <span class="field__label" for="cvv">CVV</span>
+          <input class="field__input" type="text" id="cvv" />
+        </label>
+            </div>
+            <span class="checkmark"></span>
+            </label>
+
+            <label class="container">PayPal
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+            <a class="button" href="#">Complete Order</a>
+    </div>
+
+    </section>
+
+
+
+
+    <div class="order-summary box">
+        <section class="grid two-column-order add-gutters">
+            <img class="products" src="img/luisana-galicia.jpg" alt="a gold necklace" width="150" height="200" />
+            <div>
+                <label class="title">Spessartite Garnet Ring | 0.02ct | SZ 9.5</label>
+                <section class="grid two-column-fixed">
+                    <section>
+                        <p>Quantity</p>
+                        <p>Price</p>
+                    </section>
+
+                    <section>
+                        <p class="left-align">1</p>
+                        <p class="left-align">$130</p>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="grid two-column-fixed">
+            <section>
+                <p>Order Summary</p>
+                <p>Shipping Fee</p>
+                <p class="title">Subtotal</p>
+            </section>
+
+            <section>
+                <p class="left-align">$240</p>
+                <p class="left-align">$0</p>
+                <p class="title left-align">$240</p>
+            </section>
+        </section>
+    </div>
+    </div>
+
+</body>
+
+</html>
