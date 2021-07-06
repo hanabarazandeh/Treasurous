@@ -10,38 +10,61 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/form.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/grids.css" />
-    <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href="css/product-page.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <!-- in text link -->
 
-    <!-- 4 levels of heading -->
+    <section class="top-bar grid top-3-column-fixed" id="top-bar">
+        <!-- https://www.sitepoint.com/community/t/how-to-make-h1-h2-etc-as-links/3004 -->
+        <a href="index.html">
+            <h1>Treasurous</h1>
+        </a>
 
-    <section class="grid two-column">
-        <h1>Treasurous</h1>
+        <form class="search" id="search">
+            <input type="text" placeholder="Search.." name="search" id="searchInput" class="search-input" />
+            <div href="#" class="search-button" id="searchButton" onclick="showSearch()">
+                <svg class="search-icon" viewBox="0 0 24 24">
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+            </div>
+        </form>
 
-        <nav class="grid four-column add-gutters">
-            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Shop</a>
+        <nav class="topnav grid top-3-column-fixed add-gutters" id="myNav">
+            <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
 
-            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
+                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
 
-            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
+                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
 
-            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
+
         </nav>
     </section>
+
+
     <h2>Chain Gold Necklace</h2>
     <section class="grid two-column-product add-gutters product-details">
         <div class="img-container grid add-gutters">
             <a href="https://stackoverflow.com/questions/14730484/add-a-link-to-an-image-in-a-css-style-sheet">
-                <img src="img/anna-elizabeth.jpg" class="clipped-img product-details-img" alt="a gold necklace" width="100" height="120" />
+                <img src="img/anna-elizabeth.jpg" class="clipped-img" alt="a gold necklace" />
             </a>
-            <div class="grid fields-3-column-fixed add-gutters">
-                <img class="products" src="img/luisana-galicia.jpg" alt="a gold necklace" width="125" height="110" />
-                <img class="products" src="img/luisana-galicia.jpg" alt="a gold necklace" width="125" height="110" />
-                <img class="products" src="img/luisana-galicia.jpg" alt="a gold necklace" width="125" height="110" />
+
+            <div class="scrollable-container-product grid four-column-fixed add-gutters">
+                <img class="products " src="img/jess-harper.jpg " alt="a gold necklace " />
+                <img class="products " src="img/jess-harper.jpg " alt="a gold necklace " />
+                <img class="products " src="img/jess-harper.jpg " alt="a gold necklace " />
+                <img class="products " src="img/jess-harper.jpg " alt="a gold necklace " />
+
             </div>
+
+
         </div>
 
         <div>
@@ -89,10 +112,30 @@
 
     <h3>You May Also Like</h3>
     <section class="grid three-rows-fixed add-gutters">
-        <img class="products" src="img/jess-harper.jpg" alt="a gold necklace" width="200" height="250" />
+        <img class="products" src="img/jess-harper.jpg" alt="a gold necklace" />
         <label class="title" for="necklace">Vintage Gold Necklace</label>
         <label for="necklace"> CA$‌32.00</label>
     </section>
+
+    <footer>
+        <hr>
+        <section class="grid four-column">
+            <section class="grid three-rows-fixed add-gutters">
+                <h3>Company</h3>
+                <a class="footer" href="https://unsplash.com/@shopannaelizabeth">About</a>
+                <a class="footer" href="https://unsplash.com/@shopannaelizabeth">Stores</a>
+                <a class="footer" href="https://unsplash.com/@shopannaelizabeth">Careers</a>
+            </section>
+            <section class="grid three-rows-fixed add-gutters">
+                <h3>Support</h3>
+                <a class="footer">FAQ</a>
+                <a class="footer">Shipping and Returns</a>
+                <a class="footer">Contact</a>
+            </section>
+
+        </section>
+    </footer>
+    <script src="hamburger-menu.js"></script>
 </body>
 
 </html>

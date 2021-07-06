@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .grid {
     display: grid;
 }
@@ -44,8 +49,12 @@ it can cause problems when we add padding */
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-Í .grid.table {
+.grid.table {
     grid-template-areas: repeat(auto);
+}
+
+.grid.four-column-fixed {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 
@@ -63,11 +72,10 @@ it can cause problems when we add padding */
 
 @media (min-width: 39rem) {
     .grid.four-column {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
-    .grid.grid.two-column-product {
+    .grid.two-column-product {
         grid-template-columns: 1fr 1fr;
-        margin-right: 1.5;
     }
 }
 
@@ -75,19 +83,25 @@ it can cause problems when we add padding */
     .grid.two-column {
         grid-template-columns: 1fr 1fr;
     }
+    .grid.two-column-product {
+        grid-template-columns: 1fr 1fr;
+    }
     .grid.two-column-checkout {
         grid-template-columns: 1fr 1fr;
     }
     .grid.three-column {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .grid.four-column {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .search {
+        margin-left: 1rem;
+    }
 }
 
-@media (min-width: 72rem) {
-    .grid.three-column {
-        grid-template-columns: 1fr 2fr 1fr;
+@media (min-width: 74rem) {
+    body {
+        margin: auto;
     }
 }

@@ -1,0 +1,52 @@
+/* The hero image */
+
+.banner-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(100, 92, 65, 0.1), rgba(100, 92, 65, 0.1)), url("../img/special-collection.jpg");
+    /* Set a specific height */
+    height: 30rem;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+
+/* Place text in the middle of the image */
+
+.banner-image img {
+    height: 50%;
+    width: 100%;
+}
+
+
+/* https://stackoverflow.com/questions/443700/div-with-horizontal-scrolling-only */
+
+.banner-image .button {
+    text-align: right;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+}
+
+.banner-text {
+    text-align: right;
+    position: absolute;
+    padding: 0.25rem 0.5rem;
+    top: 60%;
+    right: 5%;
+    color: #FEFBF4;
+    font-family: 'Bodoni Moda', serif;
+    font-style: regular;
+    font-weight: 400;
+    font-size: 1.5rem;
+}

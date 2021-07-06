@@ -1,0 +1,20 @@
+.clipped-img {
+    /* width: 100%;
+    height: auto; */
+    display: block;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    object-fit: inherit;
+}
+
+.scrollable-container-product {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scrollable-container-product img {
+    width: 10rem;
+    height: auto;
+    display: inline-block;
+}
