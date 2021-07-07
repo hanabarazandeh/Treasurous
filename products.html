@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <!-- name="viewport" means hey im providing some information about viewport
 		and then we say adjust the width to device width, not the device pixels  -->
@@ -9,284 +10,78 @@
     <link href="css/main.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/grids.css" />
     <link rel="stylesheet" href="css/slideshow.css" />
-  </head>
+    <link href="css/home-page.css" rel="stylesheet" />
+    <link href="css/products.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-  <body>
-    <!-- in text link -->
+<body>
+    <section class="top-bar grid top-3-column-fixed" id="top-bar">
+        <h1>Treasurous</h1>
 
-    <!-- 4 levels of heading -->
-
-    <section class="grid two-column">
-      <h1>Treasurous</h1>
-
-      <nav class="grid four-column add-gutters">
-        <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Shop</a>
-
-        <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
-
-        <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
-
-        <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
-      </nav>
-    </section>
-
-    <section>
-      <h3>Shopping Cart</h3>
-    </section>
-
-    <!-- https://www.w3schools.com/howto/howto_css_searchbar.asp -->
-
-    <form class="grid two-column-fixed">
-      <input type="text" placeholder="Search.." name="search" />
-      <div class="button" href="#" id="search-button">
-        <svg class="search-icon" viewBox="0 0 24 24">
-          <path
-            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-          />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </svg>
-      </div>
-    </form>
-
-    <!-- form element means users input -->
-    <!-- label and input are not connected by default, we have to do that manually
-    we have to add one more piece for that: id element -->
-
-    <section>
-      <fieldset class="grid two-column add-gutters">
-        <div>
-          <label>
-            Username
-            <input type="text" name="username" />
-          </label>
-        </div>
-
-        <div>
-          <label>
-            Password
-            <input type="text" name="password" />
-          </label>
-        </div>
-      </fieldset>
-    </section>
-
-    <h2>Chain Gold Necklace</h2>
-    <section class="grid two-column add-gutters product-details">
-      <div class="img-container">
-        <a
-          href="https://stackoverflow.com/questions/14730484/add-a-link-to-an-image-in-a-css-style-sheet"
-        >
-          <img
-            src="img/anna-elizabeth.jpg"
-            class="clipped-img product-details-img"
-            alt="a gold necklace"
-            width="478"
-            height="650"
-          />
-        </a>
-      </div>
-
-      <div>
-        <!-- https://100ways.com/collections/
-        featured-new-available/products/floral-diamond-ring-0-02ct-sz-9-5 -->
-        <section class="grid two-column-fixed">
-          <section>
-            <p>Metal</p>
-            <p>Size</p>
-            <p>Carat</p>
-          </section>
-
-          <section>
-            <p>9 1/2</p>
-            <p>10k Yellow Gold</p>
-            <p>0.02ct</p>
-          </section>
-        </section>
-
-        <!-- https://www.w3schools.com/tags/att_input_type_number.asp 
-        https://stackoverflow.com/questions/63544101/customize-increment-arrows
-        -on-input-of-type-number-using-css-->
-        <section>
-          <form class="grid two-column add-gutters">
-            <label for="quantity">Quantity:</label>
-            <td>
-              <div class="input-group mx-auto mb-0">
-                <div class="number-input">
-                  <button></button>
-                  <input
-                    class="quantity bg-light"
-                    min="0"
-                    name="quantity"
-                    value="1"
-                    type="number"
-                  />
-                  <button class="plus"></button>
-                </div>
-              </div>
-            </td>
-          </form>
-        </section>
-
-        <section>
-          <a class="button" href="#">Add To Cart</a>
-        </section>
-      </div>
-    </section>
-
-    <h3>You May Also Like</h3>
-    <section class="grid three-rows-fixed add-gutters">
-      <img
-        class="products"
-        src="img/jess-harper.jpg"
-        alt="a gold necklace"
-        width="200"
-        height="250"
-      />
-      <label class="title" for="necklace">Vintage Style Gold Necklace</label>
-      <label for="necklace"> CA$‌32.00</label>
-    </section>
-
-    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio -->
-    <h3>Order Summary</h3>
-    <section class="grid three-column add-gutters">
-      <div>
-        <h3 class="title">Payment Method</h3>
-        <label class="container">Visa
-          <input type="radio" checked="checked" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container">Mastercard
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container">Apple Pay
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container">PayPal
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-      </div>
-    <section class="grid two-column-order add-gutters order-summary">
-      <img
-        class="products"
-        src="img/luisana-galicia.jpg"
-        alt="a gold necklace"
-        width="150"
-        height="200"
-      />
-      <div>
-        <label class="title">Spessartite Garnet Ring | 0.02ct | SZ 9.5</label>
-        <section class="grid two-column-fixed">
-          <section>
-            <p>Quantity</p>
-            <p>Price</p>
-          </section>
-
-          <section>
-            <p>1</p>
-            <p>$130</p>
-          </section>
-        </section>
-      </div>
-    </section>
-
-    <div>
-    <section class="grid two-column-fixed">
-      <section>
-        <p>Order Summary</p>
-        <p>Shipping Fee</p>
-        <p class="title">Subtotal</p>
-      </section>
-
-      <section>
-        <p>$240</p>
-        <p>$0</p>
-        <p class="title">$240</p>
-      </section>
-    </section>
-
-    <section>
-      <a class="button" href="#">Checkout</a>
-    </section>
-    </div>
-
-  </section>
-
-
-
-  <section class="carousel" aria-label="Gallery">
-    <ol class="carousel__viewport">
-      <li id="carousel__slide1"
-          tabindex="0"
-          class="carousel__slide">
-          <img
-          src="img/anna-elizabeth.jpg"
-          class="product-details-img"
-          alt="a gold necklace"
-          width="800"
-          height="800"
+        <form class="search" id="search">
+            <input type="text" placeholder="Search.." name="search" id="searchInput" class="search-input" />
+            <div href="#" class="search-button" id="searchButton" onclick="showSearch()">
+                <svg class="search-icon" viewBox="0 0 24 24">
+        <path
+          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
         />
-        <div class="carousel__snapper">
-          <a href="#carousel__slide4"
-             class="carousel__prev">Go to last slide</a>
-          <a href="#carousel__slide2"
-             class="carousel__next">Go to next slide</a>
-        </div>
-      </li>
-      <li id="carousel__slide2"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper"></div>
-        <a href="#carousel__slide1"
-           class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide3"
-           class="carousel__next">Go to next slide</a>
-      </li>
-      <li id="carousel__slide3"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper"></div>
-        <a href="#carousel__slide2"
-           class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide4"
-           class="carousel__next">Go to next slide</a>
-      </li>
-      <li id="carousel__slide4"
-          tabindex="0"
-          class="carousel__slide">
-        <div class="carousel__snapper"></div>
-        <a href="#carousel__slide3"
-           class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide1"
-           class="carousel__next">Go to first slide</a>
-      </li>
-    </ol>
-    <aside class="carousel__navigation">
-      <ol class="carousel__navigation-list">
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide1"
-             class="carousel__navigation-button">Go to slide 1</a>
-        </li>
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide2"
-             class="carousel__navigation-button">Go to slide 2</a>
-        </li>
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide3"
-             class="carousel__navigation-button">Go to slide 3</a>
-        </li>
-        <li class="carousel__navigation-item">
-          <a href="#carousel__slide4"
-             class="carousel__navigation-button">Go to slide 4</a>
-        </li>
-      </ol>
-    </aside>
-  </section>
+        <path d="M0 0h24v24H0z" fill="none" />
+      </svg>
+            </div>
+        </form>
+
+        <nav class="topnav grid top-3-column-fixed add-gutters" id="myNav">
+            <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
+
+                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
+
+                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
+
+
+        </nav>
+    </section>
 
 
 
-  <script src="slider.js"></script>
-  </body>
+
+
+
+
+    <section class="margin-left">
+        <h2>Rings</h2>
+        <figure class="banner-rings">
+        </figure>
+
+    </section>
+    <footer>
+        <hr>
+        <section class="grid four-column">
+            <section class="grid three-rows-fixed add-gutters">
+                <h3>Company</h3>
+                <a class="footer" href="https://unsplash.com/@shopannaelizabeth">About</a>
+                <a class="footer" href="https://unsplash.com/@shopannaelizabeth">Stores</a>
+                <a class="footer" href="https://unsplash.com/@shopannaelizabeth">Careers</a>
+            </section>
+            <section class="grid three-rows-fixed add-gutters">
+                <h3>Support</h3>
+                <a class="footer">FAQ</a>
+                <a class="footer">Shipping and Returns</a>
+                <a class="footer">Contact</a>
+            </section>
+
+        </section>
+    </footer>
+
+    <menu class="fixed-menu add-gutters">
+        <li>New Arrival</li>
+        <li>Best Sellers</li>
+        <li>Sale</li>
+    </menu>
+
+    <script src="hamburger-menu.js"></script>
+</body>
+
 </html>

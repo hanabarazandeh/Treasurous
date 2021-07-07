@@ -5,6 +5,7 @@
 body {
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 10rem;
 }
 
 .grid {
@@ -41,8 +42,12 @@ it can cause problems when we add padding */
     grid-template-columns: 1fr 1fr;
 }
 
-.fields-2-column-fixed {
+.two-column-fixed {
     grid-template-columns: 1fr 1fr;
+}
+
+.two-column-fixed-menu {
+    grid-template-columns: 1fr 5fr;
 }
 
 .fields-3-column-fixed {
@@ -103,5 +108,6 @@ it can cause problems when we add padding */
 @media (min-width: 74rem) {
     body {
         margin: auto;
+        margin-top: 10rem;
     }
 }
