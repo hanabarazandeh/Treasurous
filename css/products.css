@@ -13,12 +13,91 @@
 .fixed-menu {
     position: fixed;
     top: 20%;
-    left: 7%;
+    left: 5%;
     background-color: #FDF8EC;
     height: fit-content;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.margin-left {
-    margin-left: 10%;
+.menu-item {
+    padding: 0.25rem;
+}
+
+@media screen and (max-width: 65rem) {
+    .fixed-menu {
+        position: inherit;
+        margin: 0;
+        background-color: #FDF8EC;
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .menu-item {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 65rem) {
+    .margin-left {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 74rem) {
+    .fixed-menu {
+        position: fixed;
+        top: 20%;
+        left: auto;
+        background-color: #FDF8EC;
+        height: fit-content;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .columns-products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 50rem) {
+    .columns-products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.product-container {
+    width: fit-content;
+    height: auto;
+}
+
+.ring-1 {
+    background-image: url(../img/ring-1-a.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ring-1:hover {
+    background-image: url(../img/ring-1-b.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+}
+
+.product-container.grid.add-gutters {
+    grid-row-gap: 0.75rem;
+}
+
+.price {
+    display: block;
+    font-weight: 400;
 }
