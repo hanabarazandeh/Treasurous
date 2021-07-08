@@ -151,11 +151,6 @@ nav {
     .topnav.responsive {
         position: relative;
     }
-    .topnav.responsive .icon {
-        /* position: absolute;
-        right: 0rem;
-        top: 1.2rem; */
-    }
     .topnav.responsive a {
         float: none;
         display: block;
