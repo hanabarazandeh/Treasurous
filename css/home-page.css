@@ -50,3 +50,19 @@ figure {
     font-weight: 400;
     font-size: 1.5rem;
 }
+
+.products-homepage {
+    width: 15rem;
+    height: auto;
+    display: inline-block;
+}
+
+.product-container-homepage {
+    position: relative;
+}
+
+.products-descr {
+    position: absolute;
+    left: 10%;
+    top: 75%;
+}

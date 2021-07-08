@@ -245,8 +245,8 @@ fieldset {
 .title {
     font-family: 'Bodoni Moda', serif;
     font-style: regular;
-    font-weight: 400;
-    font-size: 1.25rem;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .footer {
@@ -335,22 +335,6 @@ tryit.asp?filename=tryhow_css_custom_radio */
     user-select: none;
 }
 
-.products {
-    width: 15rem;
-    height: auto;
-    display: inline-block;
-}
-
-.product-container {
-    position: relative;
-}
-
-.products-descr {
-    position: absolute;
-    left: 10%;
-    top: 75%;
-}
-
 
 /* https://www.geeksforgeeks.org/svg-viewbox-attribute/ 
 https://stackoverflow.com/questions/60491855/how-to-resize-the-clippath-area-of-svg
@@ -383,5 +367,4 @@ img {
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-color: #9E6A36;
-    ;
 }
