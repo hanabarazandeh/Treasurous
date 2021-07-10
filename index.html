@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -21,7 +21,7 @@
 
         <form class="search" id="search">
             <input type="text" placeholder="Search.." name="search" id="searchInput" class="search-input" />
-            <div href="#" class="search-button" id="searchButton" onclick="showSearch()">
+            <div class="search-button" id="searchButton" onclick="showSearch()">
                 <svg class="search-icon" viewBox="0 0 24 24">
             <path
               d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
@@ -34,11 +34,12 @@
         <nav class="topnav grid top-3-column-fixed add-gutters" id="myNav">
             <a href="javascript:void(0);" class="icon" onclick="showMenu()">
                 <i class="fa fa-bars"></i>
-                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
+            </a>
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
 
-                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
 
-                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
 
 
         </nav>
@@ -56,37 +57,45 @@
 
     <div class="scrollable-container grid four-column-fixed add-gutters">
 
-        <figure class="product-container-homepage grid three-rows-fixed add-gutters">
-            <a href="products.html">
-                <img class="products-homepage" src="img/rings.jpg " alt="a gold necklace " />
-                <figcaption class="title products-descr" for="necklace ">Rings</figcaption>
-            </a>
-        </figure>
+        <a href="products.html">
+            <figure class="product-container-homepage grid three-rows-fixed add-gutters">
 
-        <figure class="product-container-homepage grid three-rows-fixed add-gutters">
-            <img class="products-homepage" src="img/bracelets.jpg " alt="a gold necklace " />
-            <figcaption class="title products-descr" for="necklace ">Bracelets</figcaption>
-        </figure>
+                <img class="products-homepage" src="img/rings.jpg " alt="buy rings" />
+                <figcaption class="title products-descr">Rings</figcaption>
 
-        <figure class="product-container-homepage grid three-rows-fixed add-gutters">
-            <img class="products-homepage" src="img/earings.jpg " alt="a gold necklace " />
-            <figcaption class="title products-descr" for="necklace ">Earings</figcaption>
-        </figure>
+            </figure>
+        </a>
 
-        <figure class="product-container-homepage grid three-rows-fixed add-gutters">
-            <img class="products-homepage" src="img/sets.jpg " alt="a gold necklace " />
-            <figcaption class="title products-descr" for="necklace ">Sets</figcaption>
-        </figure>
+        <a>
+            <figure class="product-container-homepage grid three-rows-fixed add-gutters">
+                <img class="products-homepage" src="img/bracelets.jpg " alt="buy bracelets" />
+                <figcaption class="title products-descr">Bracelets</figcaption>
+            </figure>
+        </a>
 
-        <figure class="product-container-homepage grid three-rows-fixed add-gutters">
-            <img class="products-homepage" src="img/necklaces.jpg " alt="a gold necklace " />
-            <figcaption class="title products-descr" for="necklace ">Necklaces</figcaption>
-        </figure>
+        <a>
+            <figure class="product-container-homepage grid three-rows-fixed add-gutters">
+                <img class="products-homepage" src="img/earings.jpg " alt="buy earings" />
+                <figcaption class="title products-descr">Earings</figcaption>
+            </figure>
+        </a>
 
+        <a>
+            <figure class="product-container-homepage grid three-rows-fixed add-gutters">
+                <img class="products-homepage" src="img/sets.jpg " alt="buy sets" />
+                <figcaption class="title products-descr">Sets</figcaption>
+            </figure>
+        </a>
+
+        <a>
+            <figure class="product-container-homepage grid three-rows-fixed add-gutters">
+                <img class="products-homepage" src="img/necklaces.jpg " alt="buy necklaces" />
+                <figcaption class="title products-descr">Necklaces</figcaption>
+            </figure>
+        </a>
     </div>
 
     <hr>
-
 
     <section class="grid two-column-product add-gutters">
         <section>
@@ -105,23 +114,19 @@
     </section>
 
 
-
-    <footer>
-        <hr>
-        <section class="grid four-column">
-            <section class="grid three-rows-fixed add-gutters">
-                <h3>Company</h3>
-                <a class="footer" href="">About</a>
-                <a class="footer" href="">Stores</a>
-                <a class="footer" href="">Careers</a>
-            </section>
-            <section class="grid three-rows-fixed add-gutters">
-                <h3>Support</h3>
-                <a class="footer">FAQ</a>
-                <a class="footer">Shipping and Returns</a>
-                <a class="footer">Contact</a>
-            </section>
-
+    <hr>
+    <footer class="grid four-column">
+        <section class="grid three-rows-fixed add-gutters">
+            <h3>Company</h3>
+            <a class="footer" href="">About</a>
+            <a class="footer" href="">Stores</a>
+            <a class="footer" href="">Careers</a>
+        </section>
+        <section class="grid three-rows-fixed add-gutters">
+            <h3>Support</h3>
+            <a class="footer">FAQ</a>
+            <a class="footer">Shipping and Returns</a>
+            <a class="footer">Contact</a>
         </section>
     </footer>
 

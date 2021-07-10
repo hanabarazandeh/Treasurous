@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -10,22 +10,19 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/form.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/grids.css" />
+    <link href="css/products.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/product-page.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-
     <section class="top-bar grid top-3-column-fixed" id="top-bar">
-        <!-- https://www.sitepoint.com/community/t/how-to-make-h1-h2-etc-as-links/3004 -->
-        <a href="index.html">
-            <h1>Treasurous</h1>
-        </a>
+        <h1>Treasurous</h1>
 
         <form class="search" id="search">
             <input type="text" placeholder="Search.." name="search" id="searchInput" class="search-input" />
-            <div href="#" class="search-button" id="searchButton" onclick="showSearch()">
+            <div class="search-button" id="searchButton" onclick="showSearch()">
                 <svg class="search-icon" viewBox="0 0 24 24">
             <path
               d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
@@ -38,68 +35,65 @@
         <nav class="topnav grid top-3-column-fixed add-gutters" id="myNav">
             <a href="javascript:void(0);" class="icon" onclick="showMenu()">
                 <i class="fa fa-bars"></i>
-                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
+            </a>
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">About</a>
 
-                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Contact</a>
 
-                <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
+            <a class="my-nav" href="https://unsplash.com/@shopannaelizabeth">Login</a>
 
 
         </nav>
     </section>
 
 
-    <h2>Chain Gold Necklace</h2>
+    <h2>Vintage Silver Ring CA$‌52.00</h2>
     <section class="grid two-column-product add-gutters product-details">
         <div class="img-container grid add-gutters">
-            <a href="https://stackoverflow.com/questions/14730484/add-a-link-to-an-image-in-a-css-style-sheet">
-                <img src="img/anna-elizabeth.jpg" class="clipped-img" alt="a gold necklace" />
-            </a>
-
+            <img id="mainImg" src="img/ring-2-0.JPG" class="clipped-img" alt="a gold necklace" />
             <div class="scrollable-container-product grid four-column-fixed add-gutters">
-                <img class="products " src="img/jess-harper.jpg " alt="a gold necklace " />
-                <img class="products " src="img/jess-harper.jpg " alt="a gold necklace " />
-                <img class="products " src="img/jess-harper.jpg " alt="a gold necklace " />
-                <img class="products " src="img/jess-harper.jpg " alt="a gold necklace " />
+                <a> <img id="img0" src="img/ring-2-0.JPG " alt="a gold necklace " /></a>
+                <img id="img1" src="img/ring-2-1.JPG " alt="a gold necklace " />
+                <img id="img2" src="img/ring-2-2.JPG " alt="a gold necklace " />
+                <img id="img3" src="img/ring-2-3.jpg " alt="a gold necklace " />
 
             </div>
 
 
         </div>
 
-        <div>
+        <div class="product-info">
             <!-- https://100ways.com/collections/
         featured-new-available/products/floral-diamond-ring-0-02ct-sz-9-5 -->
             <section class="grid two-column-fixed">
                 <section>
-                    <p>Metal</p>
+                    <p>Material</p>
                     <p>Size</p>
                     <p>Carat</p>
+                    <label for="quantity">Quantity:</label>
                 </section>
 
                 <section>
+                    <p class="left-align">Silver</p>
                     <p class="left-align">9 1/2</p>
-                    <p class="left-align">10k Yellow Gold</p>
                     <p class="left-align">0.02ct</p>
+                    <form id="quantity" class="number-input left-align">
+
+                        <!-- https://stackoverflow.com/questions/1878264/how-do-i-make-an-html-button-not-reload-the-page
+                         -->
+                        <button type='button' id="decBttn"></button>
+                        <input class="quantity bg-light" min="0" name="quantity" value="1" type="number" id="quantityInput" />
+                        <button type='button' id="incrBttn" class="plus"></button>
+                    </form>
                 </section>
             </section>
 
             <!-- https://www.w3schools.com/tags/att_input_type_number.asp 
         https://stackoverflow.com/questions/63544101/customize-increment-arrows
         -on-input-of-type-number-using-css-->
-            <section>
-                <form class="grid two-column add-gutters">
-                    <label for="quantity">Quantity:</label>
-                    <td>
-                        <div class="input-group mx-auto mb-0 left-align">
-                            <div class="number-input">
-                                <button></button>
-                                <input class="quantity bg-light" min="0" name="quantity" value="1" type="number" />
-                                <button class="plus"></button>
-                            </div>
-                        </div>
-                    </td>
-                </form>
+            <section class="grid two-column add-gutters">
+
+
             </section>
 
             <section>
@@ -111,10 +105,27 @@
     <hr>
 
     <h3>You May Also Like</h3>
-    <section class="grid three-rows-fixed add-gutters">
-        <img class="products" src="img/jess-harper.jpg" alt="a gold necklace" />
-        <label class="title" for="necklace">Vintage Gold Necklace</label>
-        <label for="necklace"> CA$‌32.00</label>
+    <section class="grid columns-products add-gutters">
+        <section class="product-container  grid three-rows-fixed add-gutters" id="ring1">
+            <a><img class="products" src="img/ring-1-a.JPG" alt="a gold necklace" id="ringImg1" />
+                <h2 class="title">Silver Band Ring</h2>
+            </a>
+            <p> CA$‌22.00</p>
+        </section>
+
+        <section class="product-container  grid three-rows-fixed add-gutters" id="ring7">
+            <a><img class="products" src="img/ring-8-a.JPG" alt="a gold necklace" id="ringImg7" />
+                <h2 class="title">Wavy Ring</h2>
+            </a>
+            <p> CA$‌35.00</p>
+        </section>
+
+        <section class="product-container  grid three-rows-fixed add-gutters" id="ring3">
+            <a><img class="products" src="img/ring-3-a.JPG" alt="a gold necklace" id="ringImg3" />
+                <h2 class="title">Antique Symmetrical Ring</h2>
+            </a>
+            <p> CA$‌64.00</p>
+        </section>
     </section>
 
     <footer>
@@ -136,6 +147,11 @@
         </section>
     </footer>
     <script src="hamburger-menu.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="jquery-3.6.0.min.js"><\/script>');
+    </script>
+    <script src="change-product-img.js"></script>
+
 </body>
 
 </html>
