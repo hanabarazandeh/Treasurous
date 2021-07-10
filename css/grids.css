@@ -80,7 +80,7 @@ it can cause problems when we add padding */
         grid-template-columns: 1fr;
     }
     .grid.two-column-product {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
     }
 }
 
@@ -89,10 +89,7 @@ it can cause problems when we add padding */
         grid-template-columns: 1fr 1fr;
     }
     .grid.two-column-product {
-        grid-template-columns: 1fr 1fr;
-    }
-    .grid.two-column-checkout {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
     }
     .grid.three-column {
         grid-template-columns: 1fr 1fr 1fr;

@@ -17,4 +17,7 @@
     width: 10rem;
     height: auto;
     display: inline-block;
+    cursor: pointer;
 }
+
+.product-info {}

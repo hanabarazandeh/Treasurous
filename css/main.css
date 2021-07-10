@@ -342,14 +342,6 @@ img {
     height: auto;
 }
 
-.order-summary {
-    position: fixed;
-    top: 2.5rem;
-    right: 1rem;
-    left: 60%;
-    z-index: 1;
-}
-
 .left-align {
     text-align: -webkit-right;
 }

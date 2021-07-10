@@ -13,12 +13,47 @@
     <link rel="stylesheet" href="css/slideshow.css" />
 </head>
 
-<body>
+<body id="margin-body-checkout">
 
     <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio -->
 
 
-    <div class="grid two-column-checkout add-gutters">
+    <div class="grid add-gutters" id="checkout-columns">
+        <div class="order-summary box">
+            <section class="grid two-column-order add-gutters">
+                <img class="products" src="img/ring-2-0.jpg" alt="a gold necklace" width="150" height="200" />
+                <div>
+                    <label class="title">Vintage Silver Ring</label>
+                    <section class="grid two-column-fixed">
+                        <section>
+                            <p>Quantity</p>
+                            <p>Price</p>
+                        </section>
+
+                        <section>
+                            <p class="left-align">1</p>
+                            <p class="left-align">$130</p>
+                        </section>
+                    </section>
+                </div>
+
+            </section>
+            <hr>
+            <section class="grid two-column-fixed">
+                <section>
+                    <p>Order Summary</p>
+                    <p>Shipping Fee</p>
+                    <p class="title">Subtotal</p>
+                </section>
+
+                <section>
+                    <p class="left-align">$240</p>
+                    <p class="left-align">$0</p>
+                    <p class="title left-align">$240</p>
+                </section>
+            </section>
+        </div>
+
         <section class="grid add-gutters">
 
 
@@ -67,84 +102,26 @@
                 </label>
                     </div>
                 </div>
-                <a class="button" href="#">Continue</a>
+                <a id="continueBttn" class="button" href="#">Continue</a>
 
             </div>
 
 
 
 
-            <div class="form-container box">
+            <div id="payment" class="form-container box">
                 <h3>Payment</h3>
-                <label class="container">Debit or Credit Card
-          <input type="radio" checked="checked" name="radio">
-          <div class="fields fields-3-column-fixed">
-            <label class="field">
-          <span class="field__label" for="month">Month</span>
-          <select class="field__input" id="month">
-            <option value=""></option>
-          </select>
-        </label>
-                <label class="field">
-          <span class="field__label" for="year">Year</span>
-          <select class="field__input" id="year">
-            <option value=""></option>
-          </select>
-        </label>
-                <label class="field">
-          <span class="field__label" for="cvv">CVV</span>
-          <input class="field__input" type="text" id="cvv" />
-        </label>
+
             </div>
-            <span class="checkmark"></span>
-            </label>
 
-            <label class="container">PayPal
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-            <a class="button" href="#">Complete Order</a>
-    </div>
-
-    </section>
-
-
-
-
-    <div class="order-summary box">
-        <section class="grid two-column-order add-gutters">
-            <img class="products" src="img/luisana-galicia.jpg" alt="a gold necklace" width="150" height="200" />
-            <div>
-                <label class="title">Spessartite Garnet Ring | 0.02ct | SZ 9.5</label>
-                <section class="grid two-column-fixed">
-                    <section>
-                        <p>Quantity</p>
-                        <p>Price</p>
-                    </section>
-
-                    <section>
-                        <p class="left-align">1</p>
-                        <p class="left-align">$130</p>
-                    </section>
-                </section>
-            </div>
         </section>
-        <section class="grid two-column-fixed">
-            <section>
-                <p>Order Summary</p>
-                <p>Shipping Fee</p>
-                <p class="title">Subtotal</p>
-            </section>
 
-            <section>
-                <p class="left-align">$240</p>
-                <p class="left-align">$0</p>
-                <p class="title left-align">$240</p>
-            </section>
-        </section>
-    </div>
     </div>
 
+    <script>
+        window.jQuery || document.write('<script src="jquery-3.6.0.min.js"><\/script>');
+    </script>
+    <script src="form.js"></script>
 </body>
 
 </html>
