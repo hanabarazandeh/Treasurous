@@ -9,29 +9,40 @@ function showMenu() {
 }
 
 function showSearch() {
-    console.log("showSearch called");
-    var searchInput = document.getElementById("searchInput");
-    if (searchInput.className === "search-input") {
-        searchInput.className += " responsive";
-    } else {
-        searchInput.className = "search-input";
-    }
+    $(function() {
 
-    var search = document.getElementById("search");
-    if (search.className === "search") {
-        search.className += " responsive";
+        var searchInput = document.getElementById("searchInput");
 
-    } else {
-        search.className = "search";
-    }
+        if (searchInput.className === "search-input") {
+            searchInput.className += " responsive";
+        } else {
+            searchInput.className = "search-input";
+        }
 
-    var searchButton = document.getElementById("searchButton");
-    if (searchButton.className === "search-button") {
-        searchButton.className += " responsive";
+        var search = document.getElementById("search");
+        let $searchVal = $('#searchInput').val();
 
-    } else {
-        searchButton.className = "search-button";
-    }
+
+        if (search.className === "search") {
+            search.className += " responsive";
+
+        } else {
+            if ($searchVal == "rings") {
+                window.location.href = "products.html"
+            } else {
+                search.className = "search";
+            }
+        }
+
+        var searchButton = document.getElementById("searchButton");
+        if (searchButton.className === "search-button") {
+            searchButton.className += " responsive";
+
+        } else {
+            searchButton.className = "search-button";
+        }
+    });
+
 }
 
 
